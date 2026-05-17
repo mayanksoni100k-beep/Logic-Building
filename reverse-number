@@ -1,0 +1,11 @@
+# reverse number basic logical code
+
+num = int(input("Enter the number: "))
+reverse = 0
+
+while num > 0:
+    last_number = num % 10
+    reverse = reverse * 10 + last_number
+    num = num // 10
+
+print("Reverse number is:", reverse)
